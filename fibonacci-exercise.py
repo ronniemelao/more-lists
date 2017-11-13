@@ -12,8 +12,11 @@ the first 50 terms of the fibonacci sequence, starting with 0
 
 fib = [0, 1]
 
+#makes a for loop that iterates 48 times
 for x in range(48):
+#x becomes the sum of the last two numbers of the list
     x = fib[-1] + fib[-2]
+#x is added to the end of the list
     fib.append(x)
 
 # DON'T EDIT BELOW THIS LINE #
@@ -48,3 +51,5 @@ def test_contents(student_results):
         else:
             print(f"Term at index{n} is incorrect. You have {fib[n]} and I have {fibonacci_results[n]}")
             is_correct = False
+test_length(fib)
+test_contents(fib)
