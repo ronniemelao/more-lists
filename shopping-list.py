@@ -19,3 +19,16 @@ There is no automated checking on this one
 """
 
 shopping_list = []
+
+print("Type out your shopping list when prompted. When you are finished, type 'done'.")
+
+while True:
+    x=input("What do you need to buy?  ")
+    shopping_list.append(x)
+    if x == "done":
+        del shopping_list[-1]
+        break
+
+print("Your Shopping List:")
+for item in shopping_list:
+    print(f" - {item}")
