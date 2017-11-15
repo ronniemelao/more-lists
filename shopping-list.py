@@ -20,8 +20,10 @@ There is no automated checking on this one
 
 shopping_list = []
 
+#prints directions for the user, as well as how to exit the loop
 print("Type out your shopping list when prompted. When you are finished, type 'done'.")
 
+#for loop in which the user can add an item to the shopping list, and this item is added to the shopping_list list
 while True:
     x=input("What do you need to buy?  ")
     shopping_list.append(x)
@@ -29,6 +31,7 @@ while True:
         del shopping_list[-1]
         break
 
+#prints shopping list with bullets and a title
 print("Your Shopping List:")
 for item in shopping_list:
     print(f" - {item}")
